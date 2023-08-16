@@ -25,8 +25,8 @@ Meu teste de for simples e lista de frutas
 Meu teste de loop contar números pares 
     Logar no terminal números pares 
 
-Meu teste log numeros de array 
-    Logar no terminal apenas numeros do array 
+Logar no terminal apenas números da lista 
+    Logar no terminal apenas números da lista 
 
 *** Keywords ***
 Logar no terminal um dicionário
@@ -62,7 +62,7 @@ Logar no terminal números pares
         END
     END
 
-Logar no terminal apenas numeros do array 
+Logar no terminal apenas números da lista
     
     @{LISTARESPOSTA}    Create List
 
