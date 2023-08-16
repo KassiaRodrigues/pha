@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.11.4 on win32)" generated="20230815 20:37:41.098" rpa="false" schemaversion="4">
+<suite id="s1" name="testePHA" source="c:\Users\kassi\OneDrive\Área de Trabalho\DESAFIO PHA\testepha\testePHA.robot">
+<test id="s1-t1" name="Meu teste log numeros de array" line="30">
+<kw name="Logar no terminal apenas numeros do array">
+<kw name="Log To Console" library="BuiltIn">
+<arg>Listagem</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230815 20:37:41.138" endtime="20230815 20:37:41.139"/>
+</kw>
+<try>
+<branch type="TRY">
+<for flavor="IN">
+<var>${simbol}</var>
+<value>@{LETRASENUMEROS}</value>
+<iter>
+<var name="${simbol}">1</var>
+<kw name="Evaluate" library="BuiltIn">
+<var>${is_int}</var>
+<arg>isinstance(${simbol}, int)</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20230815 20:37:41.140" level="INFO">${is_int} = True</msg>
+<status status="PASS" starttime="20230815 20:37:41.140" endtime="20230815 20:37:41.143"/>
+</kw>
+<if>
+<branch type="IF" condition="${is_int}">
+<kw name="Append To List" library="Collections">
+<arg>${LISTARESPOSTA}</arg>
+<arg>${simbol}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" starttime="20230815 20:37:41.143" endtime="20230815 20:37:41.144"/>
+</kw>
+<status status="PASS" starttime="20230815 20:37:41.143" endtime="20230815 20:37:41.144"/>
+</branch>
+<branch type="ELSE">
+<kw name="Append To List" library="Collections">
+<arg>${LISTAFALHA}</arg>
+<arg>${simbol}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="NOT RUN" starttime="20230815 20:37:41.144" endtime="20230815 20:37:41.144"/>
+</kw>
+<kw name="Fail" library="BuiltIn">
+<arg>Erro, itens não são numeros.</arg>
+<doc>Fails the test with the given message and optionally alters its tags.</doc>
+<status status="NOT RUN" starttime="20230815 20:37:41.145" endtime="20230815 20:37:41.146"/>
+</kw>
+<status status="NOT RUN" starttime="20230815 20:37:41.144" endtime="20230815 20:37:41.146"/>
+</branch>
+<status status="PASS" starttime="20230815 20:37:41.143" endtime="20230815 20:37:41.146"/>
+</if>
+<status status="PASS" starttime="20230815 20:37:41.140" endtime="20230815 20:37:41.146"/>
+</iter>
+<iter>
+<var name="${simbol}">2</var>
+<kw name="Evaluate" library="BuiltIn">
+<var>${is_int}</var>
+<arg>isinstance(${simbol}, int)</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20230815 20:37:41.147" level="INFO">${is_int} = True</msg>
+<status status="PASS" starttime="20230815 20:37:41.147" endtime="20230815 20:37:41.147"/>
+</kw>
+<if>
+<branch type="IF" condition="${is_int}">
+<kw name="Append To List" library="Collections">
+<arg>${LISTARESPOSTA}</arg>
+<arg>${simbol}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" starttime="20230815 20:37:41.148" endtime="20230815 20:37:41.148"/>
+</kw>
+<status status="PASS" starttime="20230815 20:37:41.148" endtime="20230815 20:37:41.148"/>
+</branch>
+<branch type="ELSE">
+<kw name="Append To List" library="Collections">
+<arg>${LISTAFALHA}</arg>
+<arg>${simbol}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="NOT RUN" starttime="20230815 20:37:41.149" endtime="20230815 20:37:41.149"/>
+</kw>
+<kw name="Fail" library="BuiltIn">
+<arg>Erro, itens não são numeros.</arg>
+<doc>Fails the test with the given message and optionally alters its tags.</doc>
+<status status="NOT RUN" starttime="20230815 20:37:41.149" endtime="20230815 20:37:41.149"/>
+</kw>
+<status status="NOT RUN" starttime="20230815 20:37:41.149" endtime="20230815 20:37:41.149"/>
+</branch>
+<status status="PASS" starttime="20230815 20:37:41.148" endtime="20230815 20:37:41.150"/>
+</if>
+<status status="PASS" starttime="20230815 20:37:41.146" endtime="20230815 20:37:41.150"/>
+</iter>
+<iter>
+<var name="${simbol}">3</var>
+<kw name="Evaluate" library="BuiltIn">
+<var>${is_int}</var>
+<arg>isinstance(${simbol}, int)</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<msg timestamp="20230815 20:37:41.151" level="INFO">${is_int} = True</msg>
+<status status="PASS" starttime="20230815 20:37:41.150" endtime="20230815 20:37:41.151"/>
+</kw>
+<if>
+<branch type="IF" condition="${is_int}">
+<kw name="Append To List" library="Collections">
+<arg>${LISTARESPOSTA}</arg>
+<arg>${simbol}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" starttime="20230815 20:37:41.151" endtime="20230815 20:37:41.152"/>
+</kw>
+<status status="PASS" starttime="20230815 20:37:41.151" endtime="20230815 20:37:41.152"/>
+</branch>
+<branch type="ELSE">
+<kw name="Append To List" library="Collections">
+<arg>${LISTAFALHA}</arg>
+<arg>${simbol}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="NOT RUN" starttime="20230815 20:37:41.152" endtime="20230815 20:37:41.152"/>
+</kw>
+<kw name="Fail" library="BuiltIn">
+<arg>Erro, itens não são numeros.</arg>
+<doc>Fails the test with the given message and optionally alters its tags.</doc>
+<status status="NOT RUN" starttime="20230815 20:37:41.152" endtime="20230815 20:37:41.152"/>
+</kw>
+<status status="NOT RUN" starttime="20230815 20:37:41.152" endtime="20230815 20:37:41.152"/>
+</branch>
+<status status="PASS" starttime="20230815 20:37:41.151" endtime="20230815 20:37:41.153"/>
+</if>
+<status status="PASS" starttime="20230815 20:37:41.150" endtime="20230815 20:37:41.153"/>
+</iter>
+<status status="PASS" starttime="20230815 20:37:41.139" endtime="20230815 20:37:41.153"/>
+</for>
+<status status="PASS" starttime="20230815 20:37:41.139" endtime="20230815 20:37:41.153"/>
+</branch>
+<branch type="EXCEPT">
+<kw name="Log To Console" library="BuiltIn">
+<arg>${LISTAFALHA}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20230815 20:37:41.153" endtime="20230815 20:37:41.153"/>
+</kw>
+<status status="NOT RUN" starttime="20230815 20:37:41.153" endtime="20230815 20:37:41.153"/>
+</branch>
+<branch type="FINALLY">
+<kw name="Log To Console" library="BuiltIn">
+<arg>${LISTARESPOSTA}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230815 20:37:41.154" endtime="20230815 20:37:41.154"/>
+</kw>
+<status status="PASS" starttime="20230815 20:37:41.153" endtime="20230815 20:37:41.154"/>
+</branch>
+<status status="PASS" starttime="20230815 20:37:41.139" endtime="20230815 20:37:41.154"/>
+</try>
+<status status="PASS" starttime="20230815 20:37:41.137" endtime="20230815 20:37:41.154"/>
+</kw>
+<status status="PASS" starttime="20230815 20:37:41.136" endtime="20230815 20:37:41.156"/>
+</test>
+<doc>Meu teste de automação com dicionário, Argumentos e Retornos, If Simples, For Simples, Lista, If Inline e For in Range.</doc>
+<status status="PASS" starttime="20230815 20:37:41.103" endtime="20230815 20:37:41.157"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="testePHA">testePHA</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
